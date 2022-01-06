@@ -12,7 +12,7 @@ print("Population Mean:",populationMean)
 def random_mean_set(counter):
   dataSet = []
   for i in range(0,counter):
-    randomIndex = random.randint(0,len(dataList))
+    randomIndex = random.randint(0,len(dataList)-1)
     value = dataList[randomIndex]
     dataSet.append(value)
   randomMean = statistics.mean(dataSet)
